@@ -1,0 +1,13 @@
+package list.task2.user;
+
+public class UserField {
+	public static void main(String[] args) {
+//		- 아이디 중복검사
+//		- 회원가입
+//		- 로그인
+//		- 암호화(강사)
+//		- 비밀번호 변경(마이 페이지)
+//		- 개인 정보 수정
+//		- 인증번호 전송(API)
+	}
+}

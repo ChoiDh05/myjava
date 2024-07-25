@@ -1,0 +1,13 @@
+package myJobTest;
+
+public class SuccessCountFor {
+	int[] multipleOf4() {
+	int[] multiples = new int [250];
+	int index = 0;
+    for (int i = 4; i <= 1000; i += 4) {
+        multiples[index] = i; // 4의 배수를 배열에 저장
+        index++;
+    }
+    return multiples;
+	}
+}

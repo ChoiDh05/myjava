@@ -1,0 +1,10 @@
+package myJAVA;
+
+public class CPU extends PC{
+	String id;
+	String kind;
+	String tier;
+	int price;
+	
+	
+}

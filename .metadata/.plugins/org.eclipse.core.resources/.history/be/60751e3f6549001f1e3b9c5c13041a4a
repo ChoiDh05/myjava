@@ -1,0 +1,10 @@
+package file.test;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class FileTest {
+	public static void main(String[] args) {
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("test.txt"));
+	}
+}

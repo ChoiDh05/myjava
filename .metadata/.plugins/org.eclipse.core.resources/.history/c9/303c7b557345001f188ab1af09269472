@@ -1,0 +1,35 @@
+package list.task.fruit;
+
+//	과일 정보를 담을 클래스
+//	과일 이름이 들어갈 필드
+//	과일 가격이 들어갈 필드
+
+public class Fruit {
+	private String fruitName;
+	private int fruitPrice;
+
+	public Fruit() {;}
+
+	public Fruit(String fruitName, int fruitPrice) {
+		super();
+		this.fruitName = fruitName;
+		this.fruitPrice = fruitPrice;
+	}
+
+	public String getFruitName() {
+		return fruitName;
+	}
+
+	public void setFruitName(String fruitName) {
+		this.fruitName = fruitName;
+	}
+
+	public int getFruitPrice() {
+		return fruitPrice;
+	}
+
+	public void setFruitPrice(int fruitPrice) {
+		this.fruitPrice = fruitPrice;
+	}
+
+}

@@ -1,0 +1,86 @@
+package myJobTest;
+
+import java.util.Random;
+
+//1. 	버튼 누르기
+//1. 	근데 누를 때마다 차감이 있다면?
+//1. 	성공 시 75% + 100만원
+//2. 	실패 시 20% + 50퍼 차감
+//2.	대실패 5% + 전액 차감 및 게임 종료
+//3. 	연속 4회 성공 시  랭크업
+//4. 	연속 3회 실패 시 랭크다운
+//    	1. 등급
+//        1. 브론즈
+//        2. 실버
+//        3. 골드
+//        4. 다이아
+//2. 정보
+//1. 이름
+//2. 성공회수
+//3. 실패회수
+
+//6. 랭크
+//7. 잔액
+
+//정보에 최고성공 기록, 최고실패 기록, 최고 재산 기록을
+//저장하려고 했지만 시간 문제상 실패
+
+//클래스 선언 및 필드 생성
+public class NeedMoreCash {
+	String name;
+	int successCount;
+	int failCount;
+	int money;
+//	int rating;
+	int rank;
+
+//	밑에3개는 다른 클래스로 묶을 수 있지 않을까?
+//	int maxSucceseCount;
+//	int maxFailCount;
+//	int maxMoney;
+
+//	생성자 초기화
+	public NeedMoreCash(String name, int money, int rank) {
+		this.name = name;
+		this.money = money;
+//		this.rating = rating;
+		this.rank = rank;
+	}
+// 성공, 실패, 대실패의 확률 정의
+//	어차피 성공확률은 75퍼로 했으니까 범위를 정해두면
+//	확률결과를 3개로 나눌 수 있지 않을까?
+	String cash() {
+		Random random = new Random();
+		int[] arData = new int[100];
+		int randomIndex = 0;
+
+		for (int i = 0; i < 75; i++) {
+			arData[i] = 1;
+		}
+		for (int i = 75; i < 95; i++) {
+			arData[i] = 2;
+		}
+		for (int i = 95; i < 100; i++) {
+			arData[i] = 3;
+		}
+//		랜덤 인덱스의 값을 생성하여 randomIndex에 저장
+		randomIndex = random.nextInt(arData.length);
+// randomIndex값에 따른 리턴을 문자열로 반환
+		if (arData[randomIndex] == 1) {
+			return "성공";
+		} else if (arData[randomIndex] == 2) {
+			return "실패";
+		} else {
+			return "대실패";
+		}
+	}
+	void printInfo() {
+		String infoMessage = "이름: " + this.name + "\n" + "성공횟수: " + this.successCount + "번\n" + "실패 횟수: "
+				+ this.failCount + "번\n" + "현재 잔액: " + this.money + "원";
+		System.out.println(infoMessage);
+	}
+//	void printSuccessMessage() {
+//		System.out.println("5억년 버튼 탈출 성공!\n");
+//		System.out.println("현재" + successCount + "회 연속성공 중!");
+//	}
+}

@@ -1,0 +1,28 @@
+package exceptionTask;
+
+import java.util.Scanner;
+
+import exceptionTest.BadWordException;
+import exceptionTest.Chatting;
+
+public class ExceptionTask {
+//	캐릭터 이름을 입력받고
+//	멍청이, 바보, 똥개 가 포함된 이름은 
+//	예외를 발생시켜 사용자에게 경고 메세지를 출력해준다.
+//	강제종료하지 않는다
+	void crName(String name) {
+		
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String message = "캐릭터 이름을 입력하세요";
+		Exception exception = new Exception();
+		String name = null;
+		
+		System.out.println(message);
+		
+	}
+
+	   }
+	   

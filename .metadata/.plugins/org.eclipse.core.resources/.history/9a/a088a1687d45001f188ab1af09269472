@@ -1,0 +1,14 @@
+package list.task;
+
+import java.util.ArrayList;
+
+import list.task.food.Food;
+import list.task.fruit.Fruit;
+import list.task.type.Type;
+
+public class DBConnecter {
+	public static ArrayList<Fruit> fruits = new ArrayList<Fruit>();
+	public static ArrayList<Food> foods = new ArrayList<Food>();
+	public static ArrayList<Type> types = new ArrayList<Type>();
+//ArrayList<WesternFood> westernFoods = new ArrayList<WesternFood>();
+}

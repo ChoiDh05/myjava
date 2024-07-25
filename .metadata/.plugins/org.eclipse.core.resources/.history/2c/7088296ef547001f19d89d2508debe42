@@ -1,0 +1,18 @@
+package map.test;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+public class MyJSONArrayTest {
+	
+	JSONArray names = new JSONArray();
+	names.put("최대환");
+	names.put("김태희");
+	
+	JSONObject users = new JSONObject();
+	user.put("age","27");
+	user.put("city","seoul");
+	user.put("names",name);
+	
+	
+}

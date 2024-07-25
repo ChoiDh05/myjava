@@ -1,0 +1,7 @@
+package map.test;
+
+public class JsonTask {
+	public static void main(String[] args) {
+
+	}
+}

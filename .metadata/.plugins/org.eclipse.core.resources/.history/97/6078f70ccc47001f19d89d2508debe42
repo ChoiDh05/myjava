@@ -1,0 +1,14 @@
+package set.test;
+
+public class SetTest {
+public static void main(String[] args) {
+	HashSet<String> bloodTypeSet = new HashSet<String>();
+	
+	bloodTypeSet("A");
+	bloodTypeSet("B");
+	bloodTypeSet("O");
+	bloodTypeSet("AB");
+	
+	System.out.println(bloodTypeSet);
+}
+}

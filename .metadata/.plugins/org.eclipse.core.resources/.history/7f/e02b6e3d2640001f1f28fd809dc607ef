@@ -1,0 +1,48 @@
+package myJobTest;
+//1. 버튼 누르기
+//1. 근데 누를 때마다 차감이 있다면?
+//1. 성공 시 70%
+//2. 실패 시 30%
+//3. 연속 5회 성공 시 30%금액 증가 + 랭크업
+//4. 연속 3회 실패 시 50% 삭감 + 랭크다운
+//    1. 등급
+//        1. 브론즈
+//        2. 실버
+//        3. 골드
+//        4. 다이아
+//2. 정보
+//1. 이름
+//2. 성공회수
+//3. 실패회수
+//4. 최고 연속성공회수
+//5. 최고 연속실패회수
+//6. 랭크
+//7. 잔액
+//8. 최고잔액
+public class NeedMoreCash {
+	String name;
+	int succeseCount;
+	int failCount;
+	int money;
+	int rating;
+	int rank;
+	
+	
+//	밑에3개는 다른 클래스로 묶을 수 있지 않을까?
+	int maxSucceseCount; 
+	int maxFailCount;
+	int maxMoney;
+	
+	
+	public NeedMoreCash(String name, int money, int rating, int rank) {
+		this.name = name;
+		this.money = money;
+		this.rating = rating;
+		this.rank = rank;
+	}
+	void cash () {
+	
+	}
+	}
+	
+}

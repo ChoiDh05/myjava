@@ -1,0 +1,20 @@
+package homework.list.task;
+
+import java.util.jar.Attributes.Name;
+
+public class Page {
+	public static void main(String[] args) {
+		Product transformer = new Product("트랜스포머", 50_000, "완구", 100);
+		Product 후라이팬 = new Product("후라이팬", 10_000, "생활용품", 50);
+		Product 냉장고 = new Product("냉장고", 30_0000, "가전제품", 30);
+		Product 숟가락 = new Product("숟가락", 1500, "생활용품", 200);
+		Product RTX4090 = new Product("그래픽카드", 2_000_000, "전자제품", 10);
+		
+		Market market = new Market();
+		
+		if(market.checkProductName(RTX4090.getName()) == null); {
+			market.add(RTX4090);
+		}
+		System.out.println();
+	}
+}

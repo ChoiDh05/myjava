@@ -1,0 +1,21 @@
+package list.task.food;
+
+//- 음식 이름
+//- 음식 가격
+//- 음식 종류(한식, 중식, 일식, 양식)
+public class Food {
+	private String name;
+	private int price;
+	private String type;
+	
+	public Food() {;}
+	
+	public Food(String name, int price, String type) {
+		super();
+		this.name = name;
+		this.price = price;
+		this.type = type;
+	}
+	
+	
+}

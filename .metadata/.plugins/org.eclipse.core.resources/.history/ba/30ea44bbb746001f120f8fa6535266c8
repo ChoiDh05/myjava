@@ -1,0 +1,43 @@
+package homework.list.task;
+
+import java.util.ArrayList;
+
+import list.task.DBConnecter;
+
+public class Market {
+//	- 상품 이름으로 조회 가능
+	public Product checkProductName(String name) {
+		
+		Product product = null;
+		
+		for (int i = 0; i <DBConnecter.products.size(); i++) {
+			if(DBConnecter.products.get(i).getName().equals(name)) {
+				product = DBConnecter.products.get(i);
+			}
+		}
+		return product;
+	}
+	
+	
+//	- 상품 추가
+	public void add(Product product) {
+		DBConnecter.products.add(product);
+	}
+	
+//	- 상품 이름 찾으면 해당 상품 재고 출력
+	public int findByCount(String name) {
+		for (int i = 0; i < DBConnecter.products.size(); i++) {
+			if (DBConnecter.products.get(i).getName().equals(name)) {
+				return DBConnecter.products.get(i),getCount();
+			}
+		}
+	}
+
+	
+//	- 상품 삭제
+	public void remove(Product product) {
+		DBConnecter.products.remove(product);
+	}
+//	- 상품 종류로 해당 종류 상품 조회
+//	- 상품 재고 수정 시 10%할인
+}

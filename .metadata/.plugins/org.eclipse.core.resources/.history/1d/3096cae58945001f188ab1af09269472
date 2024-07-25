@@ -1,0 +1,25 @@
+package list.task2.user;
+
+public class User {
+//	- 이름, 아이디, 비밀번호, 휴대폰번호
+//	- private 접근자 사용
+//	- 기본 생성자 선언
+//	- 초기화 생성자는 사용하지 않는다(alt + shift + s, o)
+//	- toString() 재정의
+	String name;
+	String id;
+	String password;
+	int phoneNumber;
+	
+	public User() {;}
+	
+	public User(String name, String id, String password, int phoneNumber) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.password = password;
+		this.phoneNumber = phoneNumber;
+	}
+	
+	
+}

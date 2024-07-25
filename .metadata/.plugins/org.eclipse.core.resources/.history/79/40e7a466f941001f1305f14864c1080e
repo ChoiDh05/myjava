@@ -1,0 +1,10 @@
+package myJobTest;
+
+public class SuccessCountFor {
+	int multipleOf4() {
+		int result;
+		for (int i = 4; i <= 100; i+=4) {
+			return result;
+		}
+	}
+}

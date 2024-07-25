@@ -1,0 +1,6 @@
+package apiTest;
+
+public class ApiTest {
+	Calc calc = new Calc();
+	System.out.println(calc.divide(10,3));
+}

@@ -1,0 +1,5 @@
+package myJAVA;
+
+public class GraphicsCard extends PC{
+	Sting brand
+}

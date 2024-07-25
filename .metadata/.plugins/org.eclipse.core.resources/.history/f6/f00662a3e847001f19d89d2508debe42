@@ -1,0 +1,24 @@
+package map.test;
+
+import org.json.JSONObject;
+
+public class JsonTask {
+	public JSONObject JsonProduct() {
+		Product product = new Product();
+		JSONObject jsonProduct = new JSONObject(product);
+		return jsonProduct;
+	}
+	
+	public static void main(String[] args) {
+//		상품 클래스 선언
+//		상품 번호, 상품 이름, 상품 가격, 상품 재고 4개의 필드로 구성되어 있다.
+		Product graphicsCard = new Product("RTX4090", 2_300_000, 1, 5);
+//		1, 상품 1개를 직접 선언(제작)하여 JSON 형식으로 변경
+		prodcut.put(graphicsCard);
+		
+//		2. JSON형식의 상품 정보 중 상품 재고 출력
+		
+//		3. 기존 상품 클래스는 변경하지 않고, 전달받은 JSON에 할인여부를 추가하여
+//		할인 중인 상품을 새로 추가해준다. put
+	}
+}

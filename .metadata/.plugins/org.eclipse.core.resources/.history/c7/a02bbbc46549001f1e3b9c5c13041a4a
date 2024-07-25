@@ -1,0 +1,11 @@
+package file.test;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileTest {
+	public static void main(String[] args) throws IOException {
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("test.txt"));
+	}
+}

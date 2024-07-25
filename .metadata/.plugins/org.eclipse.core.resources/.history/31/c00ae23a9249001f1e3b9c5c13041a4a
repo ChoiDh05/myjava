@@ -1,0 +1,9 @@
+package myJAVA;
+
+public class Ram {
+	String id;
+	String name;
+	String kind;
+	String brand;
+	int price;
+}

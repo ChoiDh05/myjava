@@ -1,0 +1,23 @@
+package list2.task2.test2;
+
+import home.work.list.task.Product;
+import list.task.DBConnecter;
+
+public class Shop {
+//	- 상품 추가
+	public Product1 checkProductName(String name) {//화면에서 이름을 받아옴
+		
+		Product1 product1 = null; //초기값 생성
+		
+		for (int i = 0; i <DBConnecter.products.size(); i++) { //DB에 있는 상품 수만큼 반복
+			if(DBConnecter.products.get(i).getName().equals(name)) { //만약 DB의 product에 i번째 상품의 이름이 입력받은 이름과 같다면
+				product1 = DBConnecter.products1.get(i); // product에 DB의 product i번째 제품의 정보를 담아라
+			}
+		}
+		return product1; //product를 반환
+	}
+//	- 상품 조회
+//	- 상품 수정
+//	- 상품 삭제
+//	- 상품 목록
+}

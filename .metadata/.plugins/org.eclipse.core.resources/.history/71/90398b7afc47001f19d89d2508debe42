@@ -1,0 +1,10 @@
+package json.array.task;
+
+public class Page {
+	public static void main(String[] args) {
+		Desktop rtx4090 = new Desktop(1, "RTX4090", "MSI", 2_500_000, 20);
+		Desktop amdCPU = new Desktop(2, "Ryzen7950X3D", "AMD", 850_000, 18);
+		Desktop amdCPU = new Desktop(2, "Ryzen7950X3D", "AMD", 850_000, 18);
+		Desktop amdCPU = new Desktop(2, "Ryzen7950X3D", "AMD", 850_000, 18);
+	}
+}

@@ -1,0 +1,45 @@
+package map.test;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class MapTest {
+   public static void main(String[] args) {
+//      HashMap<String, Object> userMap = new HashMap<>();
+//      String jsonUser = "";
+//      
+//      userMap.put("id", 1);
+//      userMap.put("userId", "hds");
+//      userMap.put("name", "한동석");
+//      userMap.put("age", 20);
+//      
+//      System.out.println(userMap.toString());
+//      System.out.println(userMap.get("name"));
+//      
+//      jsonUser += "{\"id\"=" + userMap.get("id") + ", ";
+//      jsonUser += "\"name\"=" + "\"" + userMap.get("name") + "\"}";
+//            
+//      System.out.println(jsonUser);
+      
+      HashMap<String, Object> userMap = new HashMap<>();
+      userMap.put("id", 1);
+      userMap.put("userId", "hds");
+      userMap.put("name", "한동석");
+      userMap.put("age", 20);
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

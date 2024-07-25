@@ -1,0 +1,10 @@
+package list.task.food;
+
+//- 음식 종류(한식, 중식, 일식, 양식)
+public class Type {
+	private String koreaFprivate ood;
+	private String chinaFood;
+	private String japenFood;
+	private String westernFood;
+	
+}

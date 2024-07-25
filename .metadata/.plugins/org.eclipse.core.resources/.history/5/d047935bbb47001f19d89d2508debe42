@@ -1,0 +1,16 @@
+package home3.list3.task;
+
+import list.task.DBConnecter;
+
+public class MusicBank {
+	public void findMusicName(String musicName) {
+		
+		Music music = null;
+		
+		for (int i = 0; i < DBConnecter.music.size(); i++) {
+			if (DBConnecter.music.get(i).getMusicName().equals(musicName)) {
+				
+			}
+		}
+	}
+}

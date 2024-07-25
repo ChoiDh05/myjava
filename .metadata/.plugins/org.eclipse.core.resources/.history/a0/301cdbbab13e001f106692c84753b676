@@ -1,0 +1,50 @@
+package arrayTest;
+
+import java.util.Scanner;
+
+public class ArHomeTask {
+	public static void main(String[] args) {
+
+//		1번 : 7개의 정수를 입력받고 
+//        배열에 담은 후 
+//         입력한 정수들의 평균값을 구한다.
+
+//        2번 : 10개의 정수를 입력받고 
+//         배열에 담은 후 최대값과 최소값 출력
+
+//        3번 : 1~100까지 배열을 담은 후 
+//         짝수만 출력해주세요
+
+//        4번	
+//         사용자가 칸 수를 입력하고, 그 칸 수만큼 정수를 다시 입력받는다.
+//         그 후, 최대값과 최소값을 구하고 그 둘의 합을 출력하시오.
+		
+//		칸의 수와 어떤 값을 넣을지 모르므로 null값으로 선언
+		int[]arData = null;
+//		입력클래스 호출과 입력할 칸수와 정수의 번호 안내 메시지를 변수에 저장
+		Scanner sc = new Scanner(System.in);
+		String message = "입력할 정수의 개수를 정해주세요.", message2 = "번째 정수를 입력하세요.";
+//		최대값, 최소값, 그 둘의 합을 안내할 메세지 변수에 저장
+		String msMax = "최대값:", msMin = "최소값", result = "합:";
+//		입력된 칸 수를 저장할 변수와 최대값, 최소값을 저장할 변수 선언
+		int size = 0, max = 0, min = 0;
+		
+		
+//		입력할 칸 수 안내메세지 호출과 입력된 개수를 size에 저장
+		System.out.println(message);
+		size = sc.nextInt();
+
+		arData = new int[size];
+//		입력하는 정수 번호안내 메세지 출력과 입력된 칸 수 만큼 입력된 정수를 arData[i]에 저장
+		for (int i = 0; i < arData.length; i++) {	
+			System.out.println(i+1+message2);
+			arData[i] = sc.nextInt();
+			System.out.println(arData[i]);
+			
+		}
+
+//        5번
+//         1~100까지 배열을 담은 후 홀수의 합 출력 해주세요.
+
+	}
+}

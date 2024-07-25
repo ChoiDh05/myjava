@@ -1,0 +1,6 @@
+package threadTest;
+
+public class Thread1 {
+	
+//	start()sms Thread 클래스에만 있다.
+}

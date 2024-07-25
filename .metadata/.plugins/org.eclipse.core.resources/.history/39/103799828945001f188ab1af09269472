@@ -1,0 +1,13 @@
+package my.list.task.food;
+
+public class Page {
+	public static void main(String[] args) {
+		Food rice = new Food("볶음밥", 9000, "한식");
+		Food jajangmyeon = new Food("짜장면", 8000, "중식");
+		Food sushi = new Food("초밥", 18000, "일식");
+		Food pasta = new Food("스파게티", 13000, "양식");
+		
+		
+		
+	}
+}
