@@ -8,9 +8,6 @@ public class Danawa {
 		DB.db.add(component);
 	}
 //	각 부품별로 검색이 가능하다.
-	public PC findComponent(PC pc) {
-		
-	}
 //	예) 파워로 검색하면 파워 제품만, 케이스를 검색하면 케이스 제품만
 	
 	

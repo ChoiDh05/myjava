@@ -8,5 +8,5 @@ public class DB {
 
 	protected DB() {;}
 	
-	public static ArrayList<PC> db = new ArrayList<PC>();
+	public static ArrayList<PC> db = new ArrayList<DB>();
 }
