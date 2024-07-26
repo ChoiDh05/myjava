@@ -1,5 +1,0 @@
-package apiTest;
-
-public class ApiTest {
-	Calc calc = new Calc;
-}

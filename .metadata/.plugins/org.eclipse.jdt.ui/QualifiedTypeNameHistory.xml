@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="list.task.food.Food"/>
     <fullyQualifiedTypeName name="java.security.PublicKey"/>
     <fullyQualifiedTypeName name="java.net.UnknownServiceException"/>
     <fullyQualifiedTypeName name="list.task2.user.User"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="myJAVA.PcCase"/>
     <fullyQualifiedTypeName name="myJAVA.Cooler"/>
     <fullyQualifiedTypeName name="myJAVA.Build"/>
+    <fullyQualifiedTypeName name="myJAVA.PC"/>
 </qualifiedTypeNameHistroy>

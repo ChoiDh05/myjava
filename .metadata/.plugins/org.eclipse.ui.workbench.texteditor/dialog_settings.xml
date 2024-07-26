@@ -10,8 +10,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="build"/>
+		<item key="selection" value=","/>
 		<list key="findhistory">
+			<item value=";"/>
+			<item value="this."/>
+			<item value="this.id ="/>
 			<item value="pc"/>
 			<item value="Mainbord"/>
 			<item value="mainbord"/>
@@ -24,6 +27,7 @@
 			<item value="kind"/>
 		</list>
 		<list key="replacehistory">
+			<item value=","/>
 			<item value="build"/>
 			<item value="Mainboard"/>
 			<item value="mainboard"/>

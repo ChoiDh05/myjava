@@ -7,16 +7,16 @@ public class PC {
 	private String name;
 	private String kind;
 	private String brand;
-	private String tier;
+//	private String tier; 
 	private int price;
 	
-	public PC(String id, String name, String kind, String brand, String tier, int price) {
+	public PC(String id, String name, String kind, String brand, int price) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.kind = kind;
 		this.brand = brand;
-		this.tier = tier;
+//		this.tier = tier;
 		this.price = price;
 	}
 
@@ -52,13 +52,13 @@ public class PC {
 		this.brand = brand;
 	}
 
-	public String getTier() {
-		return tier;
-	}
-
-	public void setTier(String tier) {
-		this.tier = tier;
-	}
+//	public String getTier() {
+//		return tier;
+//	}
+//
+//	public void setTier(String tier) {
+//		this.tier = tier;
+//	}
 
 	public int getPrice() {
 		return price;
@@ -70,7 +70,7 @@ public class PC {
 
 	@Override
 	public String toString() {
-		return "PC [id=" + id + ", name=" + name + ", kind=" + kind + ", brand=" + brand + ", tier=" + tier + ", price="
+		return "PC [id=" + id + ", name=" + name + ", kind=" + kind + ", brand=" + brand + ", price="
 				+ price + "]";
 	}
 

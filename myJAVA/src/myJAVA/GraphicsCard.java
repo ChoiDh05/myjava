@@ -3,12 +3,12 @@ package myJAVA;
 import java.util.Objects;
 
 public class GraphicsCard extends PC{
-	private String id;
-	private String name;
-	private String kind;
-	private String brand;
-	private String tier;
-	private int price;
+	private String id; //제품아이디
+	private String name; //제품이름 예) 4080SUPER 불칸
+	private String kind; //엔비디아 or 라이젠
+	private String brand; //ASUS, MSI, 기가바이트 등
+	private String tier; //제품 등급: 4080S, 4090, 4070등
+	private int price; // 가격
 	
 //	public GraphicsCard() {;}
 //	
@@ -19,8 +19,8 @@ public class GraphicsCard extends PC{
 //
 //
 	public GraphicsCard(String id, String name, String kind, String brand, String tier, int price) {
-		super(id, name, kind, brand, tier, price);
-		
+		super(id, name, kind, brand, price);
+		this.tier = tier;
 	}
 //
 //	public String getName() {
@@ -63,14 +63,14 @@ public class GraphicsCard extends PC{
 //		this.brand = brand;
 //	}
 //
-//	public String getTier() {
-//		return tier;
-//	}
-//
-//	public void setTier(String tier) {
-//		this.tier = tier;
-//	}
-//
+	public String getTier() {
+		return tier;
+	}
+
+	public void setTier(String tier) {
+		this.tier = tier;
+	}
+
 //	public int getPrice() {
 //		return price;
 //	}
@@ -79,11 +79,13 @@ public class GraphicsCard extends PC{
 //		this.price = price;
 //	}
 //
-//	@Override
-//	public String toString() {
-//		return "GraphicsCard [id=" + id + ", name=" + name + ", kind=" + kind + ", brand=" + brand + ", tier=" + tier
-//				+ ", price=" + price + "]";
-//	}
+
+	
+	@Override
+	public String toString() {
+		return "GraphicsCard [tier=" + tier + "]";
+	}
+	
 //
 //	@Override
 //	public int hashCode() {
