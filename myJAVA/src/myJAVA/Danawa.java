@@ -19,9 +19,8 @@ private PC component;
 		return DB.db.stream().filter(type::isInstance).collect(Collectors.toList());
 	}
 
-//	각 부품별로 조건을 추가로 검색가능하다
-//	예) 파워 700W제품들 출력
-//	예) 그래픽카드에서 엔비디아 제품들 출력
+//	브랜드를 검색시 해당 브랜드의 모든 제품들이 조회가 가능하다.
+//	예) ASUS 검색하면 ASUS브랜드의 그래픽카드, 메인보드, 파워, 케이스가 검색되어야함
 	public List<PC> searchByCondition(String condition, String value) {
 	    return DB.db.stream()
 	            .filter(component -> {
@@ -48,9 +47,11 @@ private PC component;
 	            .collect(Collectors.toList());
 	}
 
-//	브랜드를 검색시 해당 브랜드의 모든 제품들이 조회가 가능하다.
-//	예) ASUS 검색하면 ASUS브랜드의 그래픽카드, 메인보드, 파워, 케이스가 검색되어야함
 
+//	각 부품별로 조건을 추가로 검색가능하다
+//	예) 파워 700W제품들 출력
+//	예) 그래픽카드에서 엔비디아 제품들 출력
+	
 //	가격대 별로 부품검색 기능
 //	예) 10만원~30만원 사이의 제품 검색
 	
