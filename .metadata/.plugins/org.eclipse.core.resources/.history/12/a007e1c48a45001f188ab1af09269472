@@ -1,7 +1,0 @@
-package list.task2.user;
-
-public class UserField {
-	public static void main(String[] args) {
-
-	}
-}
