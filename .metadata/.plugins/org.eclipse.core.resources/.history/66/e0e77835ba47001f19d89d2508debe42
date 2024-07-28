@@ -1,9 +1,0 @@
-package home3.list3.task;
-
-public class Music {
-	private String musicName;
-	private String singer;
-	private String kind;
-	private 
-	Music 
-}
