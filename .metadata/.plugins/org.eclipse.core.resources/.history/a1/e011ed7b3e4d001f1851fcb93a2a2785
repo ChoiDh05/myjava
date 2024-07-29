@@ -54,11 +54,7 @@ private PC component;
 	
 //	가격대 별로 부품검색 기능
 //	예) 10만원~30만원 사이의 제품 검색
-	public List<PC> serachByPrice(int maxPrice, int minPrice) {
-		return DB.db.stream()
-				.filter(component -> component.getPrice() >= minPrice && component.getPrice() <= maxPrice)
-				.collect(Collectors.toList());
-	}
+	
 	
 
 }

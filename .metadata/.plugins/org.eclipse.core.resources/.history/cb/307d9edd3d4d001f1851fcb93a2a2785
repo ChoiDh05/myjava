@@ -49,16 +49,12 @@ private PC component;
 
 
 //	각 부품별로 조건을 추가로 검색가능하다
-//	예) 사용자가 파워 700W로 조건입력하면 해당 제품들 출력
-//	예) 사용자가 그래픽카드 엔비디아 조건입력하면 제품들 출력
+//	예) 파워 700W제품들 출력
+//	예) 그래픽카드에서 엔비디아 제품들 출력
 	
 //	가격대 별로 부품검색 기능
 //	예) 10만원~30만원 사이의 제품 검색
-	public List<PC> serachByPrice(int maxPrice, int minPrice) {
-		return DB.db.stream()
-				.filter(component -> component.getPrice() >= minPrice && component.getPrice() <= maxPrice)
-				.collect(Collectors.toList());
-	}
+	
 	
 
 }
