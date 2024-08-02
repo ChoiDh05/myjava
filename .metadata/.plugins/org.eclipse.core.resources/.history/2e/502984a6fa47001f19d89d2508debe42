@@ -1,9 +1,0 @@
-package json.array.task;
-
-import org.json.JSONObject;
-
-public class Computer {
-//	Desktop의 제품들 JSON형식으로 변환하기
-	Desktop desktop = null;
-	JSONObject desktopJson = new JSONObject(desktop);
-}
